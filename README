@@ -1,0 +1,20 @@
+Relief Maven Plugin
+
+The Relief Plugin is used to generate a Relief configuration file for your Maven projects.
+
+Goals
+relief:generate-config
+
+To Execute
+mvn com.napramirez.relief.maven.plugins:relief-maven-plugin:1.0-SNAPSHOT:generate-config
+
+Options
+outputDirectory - Directory containing the generated JAR.  Relative to <project-basedir> if overriden with a relative path (Default: <project-basedir>/target).
+outputFilename - Filename of the generated Relief configuration (Default: projects.xml).
+
+Examples
+mvn com.napramirez.relief.maven.plugins:relief-maven-plugin:1.0-SNAPSHOT:generate-config -DoutputFilename=myProject.xml
+mvn com.napramirez.relief.maven.plugins:relief-maven-plugin:1.0-SNAPSHOT:generate-config -DoutputDirectory=relief-conf -DoutputFilename=myProject.xml
+
+References
+Relief by Jean-Hugues de Raigniac (http://workingfrog.org)
